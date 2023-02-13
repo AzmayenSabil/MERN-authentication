@@ -1,6 +1,6 @@
 # Welcome to MERN Login System
 
-Hello everyone, In this project, we are going to create **MERN Stack App with Login System**. 
+Hello everyone, In this project, we have created **MERN Stack App with Login System**. 
 We will take a look at how to create login, registration, profile, reset password routes and learn
 how to send Mail from the Node.js backend application.
 
@@ -34,5 +34,3 @@ export default {
 Now, create all these variables in the project and make sure you set ATLAS_URI variable.
 Otherwise, the project will not work.
 
-Learn More about this project from the
-[ - Daily Tuition](https://www.youtube.com/c/@dailytuition) Youtube Channel.
