@@ -2,6 +2,7 @@ import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 /** import all components */
+import Login from './components/Authentication/Login/Login.js'
 import Username from "./components/Authentication/Login/Username";
 import Password from "./components/Authentication/Login/Password";
 import Register from "./components/Authentication/Register/Register";
@@ -16,21 +17,25 @@ import { AuthorizeUser, ProtectRoute } from "./middleware/auth";
 /** root routes */
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: <Username></Username>,
+    path: '/',
+    element: <Login />
   },
+  // {
+  //   path: "/",
+  //   element: <Username></Username>,
+  // },
   {
     path: "/register",
     element: <Register></Register>,
   },
-  {
-    path: "/password",
-    element: (
-      <ProtectRoute>
-        <Password />
-      </ProtectRoute>
-    ),
-  },
+  // {
+  //   path: "/password",
+  //   element: (
+  //     <ProtectRoute>
+  //       <Password />
+  //     </ProtectRoute>
+  //   ),
+  // },
   {
     path: "/profile",
     element: (
