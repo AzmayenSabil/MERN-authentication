@@ -3,8 +3,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 /** import all components */
 import Login from './components/Authentication/Login/Login.js'
-import Username from "./components/Authentication/Login/Username";
-import Password from "./components/Authentication/Login/Password";
+// import Username from "./components/Authentication/Login/Username";
+// import Password from "./components/Authentication/Login/Password";
 import Register from "./components/Authentication/Register/Register";
 import Profile from "./components/UserProfile/Profile";
 import Recovery from "./components/Authentication/Recovery";
