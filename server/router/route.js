@@ -22,7 +22,7 @@ router.route("/createResetSession").get(authController.createResetSession); // r
 
 
 /** PUT Methods */
-router.route("/updateuser").put(Auth, authController.updateUser); // is use to update the user profile
+router.route("/updateUser").put(Auth, authController.updateUser); // is use to update the user profile
 router.route('/resetPassword').put(authController.verifyUser, authController.resetPassword); // use to reset password
 
 

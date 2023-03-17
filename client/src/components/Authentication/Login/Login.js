@@ -1,13 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import avatar from "../../../assets/profile.png";
 import toast, { Toaster } from "react-hot-toast";
 import { useFormik } from "formik";
-import { usernameValidate } from "../../../helper/validate";
 import { useAuthStore } from "../../../store/store";
-
 import { passwordValidate } from "../../../helper/validate";
-import useFetch from "../../../hooks/fetch.hook";
 import { verifyPassword } from "../../../helper/helper";
 
 import styles from "../../../styles/Username.module.css";
@@ -15,12 +11,6 @@ import styles from "../../../styles/Username.module.css";
 export default function Login() {
   const navigate = useNavigate();
   const setUsername = useAuthStore((state) => state.setUsername);
-  const username = useAuthStore((state) => state.auth.username);
-//   const [{ isLoading, apiData, serverError }] = useFetch(`/user/${username}`);
-
-//   useEffect(() => {
-
-//   }, []);
 
   const [passwordVisible, setPasswordVisible] = useState(false);
 
@@ -59,10 +49,6 @@ export default function Login() {
     },
 
   });
-
-//   if (isLoading) return <h1 className="text-2xl font-bold">isLoading</h1>;
-//   if (serverError)
-//     return <h1 className="text-xl text-red-500">{serverError.message}</h1>;
 
   return (
     <div className="container mx-auto">

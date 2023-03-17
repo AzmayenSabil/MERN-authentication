@@ -257,7 +257,7 @@ export async function resetPassword(req,res){
                         })
                         .catch( e => {
                             return res.status(500).send({
-                                error : "Enable to hashed password"
+                                error : "Unable to hash password"
                             })
                         })
                 })
